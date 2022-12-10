@@ -1,0 +1,38 @@
+*{
+    padding : 0;
+    margin : 0:
+}
+#console{
+    border : 1px solid black;
+    width : 500px;
+    height : 200px;
+}
+#character{
+    position : relative;
+    height : 50px;
+    width : 20px;
+    top : 150px;
+    background-color: aqua;
+   
+}
+.animate{animation: jump 500ms;}
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+    
+}
+#block{
+    width : 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    left : 480px;
+    top : 130px;
+    animation: block 1s infinite linear; 
+}
+@keyframes block{
+    0%{left: 480px;}
+    100%{left : -40px;}
+}
